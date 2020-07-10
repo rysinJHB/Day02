@@ -1,9 +1,25 @@
-void ft_is_negative(int n)
+#include <unistd.h>
+
+void ft_putchar(char c)
 {
-  if (n < 0)
+	write(1, &c, 1);
+}
+
+
+void ft_is_negative(int n)
+
+	
+{
+char N;
+char P;
+if (n < 0)
     ft_putchar('N');
   else if (n > 0)
     ft_putchar('P');
   else
     ft_putchar('P');
 }
+
+int main (void) 
+
+{ ft_is_negative(34);}
